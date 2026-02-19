@@ -22,6 +22,7 @@ switch (toolName) {
         const prompt = `Generate Django models and views in app '${params.app_name || 'myapp'}'. 
 Requirements: ${params.instruction}
 ${params.with_serializers ? 'Include DRF serializers.' : ''}
+CRITICAL: You MUST include comprehensive unit tests for all generated models and views.
 Please ensure the code follows Django best practices and include necessary imports.`;
         runAider(prompt);
         break;
