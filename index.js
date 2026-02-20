@@ -22,6 +22,10 @@ if (fullCommand.startsWith('install_') || fullCommand === 'list_oracle_skills' |
     // Route to django-auto-dev
     const skillArgs = [join(import.meta.dir, 'django-auto-dev', 'index.js'), ...args];
     spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
+} else if (fullCommand.startsWith('white_django_')) {
+    // Route to white-django-engine
+    const skillArgs = [join(import.meta.dir, 'white-django-engine', 'index.js'), ...args];
+    spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
 } else {
-    console.log("Usage: [oracle-tool] | [django_architect-tool] | [trading-tool] | [django_auto_tool]");
+    console.log("Usage: [oracle-tool] | [django_architect-tool] | [trading-tool] | [django_auto_tool] | [white_django_tool]");
 }
