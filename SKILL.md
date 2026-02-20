@@ -12,6 +12,7 @@ This repository contains a collection of skills to empower AI agents with specia
 - [oracle-skills (via bunx)](https://github.com/Soul-Brews-Studio/oracle-skills-cli)
 - [django-architect](./django-architect/SKILL.md)
 - [trading-bot-dev](./trading-bot-dev/SKILL.md)
+- [django-auto-dev](./django-auto-dev/SKILL.md)
 
 ## Hub Tools
 
@@ -23,3 +24,6 @@ This repository contains a collection of skills to empower AI agents with specia
 
 ### trading_bot_dev
 *Use tools from the trading-bot-dev sub-directory.*
+
+### django_auto_dev
+*Autonomous Django development with Playwright and GitHub integration.*

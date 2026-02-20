@@ -10,7 +10,7 @@ if (fullCommand.startsWith('install_') || fullCommand === 'list_oracle_skills' |
     // Legacy support for root oracle-skills
     const cliArgs = ['bunx', 'oracle-skills@latest', ...args];
     spawnSync('bun', cliArgs, { stdio: 'inherit', shell: true });
-} else if (fullCommand.startsWith('django_')) {
+} else if (fullCommand.startsWith('django_architect_')) {
     // Route to django-architect
     const skillArgs = [join(import.meta.dir, 'django-architect', 'index.js'), ...args];
     spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
@@ -18,6 +18,10 @@ if (fullCommand.startsWith('install_') || fullCommand === 'list_oracle_skills' |
     // Route to trading-bot-dev
     const skillArgs = [join(import.meta.dir, 'trading-bot-dev', 'index.js'), ...args];
     spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
+} else if (fullCommand.startsWith('django_auto_')) {
+    // Route to django-auto-dev
+    const skillArgs = [join(import.meta.dir, 'django-auto-dev', 'index.js'), ...args];
+    spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
 } else {
-    console.log("Usage: [oracle-tool] | [django-tool] | [trading-tool]");
+    console.log("Usage: [oracle-tool] | [django_architect-tool] | [trading-tool] | [django_auto_tool]");
 }
