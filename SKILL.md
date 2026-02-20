@@ -14,6 +14,7 @@ This repository contains a collection of skills to empower AI agents with specia
 - [trading-bot-dev](./trading-bot-dev/SKILL.md)
 - [django-auto-dev](./django-auto-dev/SKILL.md)
 - [white-django-engine](./white-django-engine/SKILL.md)
+- [visual-frontend-master](./visual-frontend-master/SKILL.md)
 
 ## Hub Tools
 
@@ -31,3 +32,6 @@ This repository contains a collection of skills to empower AI agents with specia
 
 ### white_django_engine
 *High-performance Django engine with 3NF and Tailwind focus.*
+
+### visual_frontend_master
+*High-end UI/UX design and Django frontend generation.*
