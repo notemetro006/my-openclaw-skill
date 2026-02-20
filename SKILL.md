@@ -1,6 +1,6 @@
 ---
 name: my-openclaw-skills
-description: A hub containing multiple specialized OpenClaw skills for AI developers and traders.
+description: A hub containing multiple specialized OpenClaw skills for AI developers, traders, and e-commerce growth.
 ---
 
 # My OpenClaw Skills Hub
@@ -15,6 +15,7 @@ This repository contains a collection of skills to empower AI agents with specia
 - [django-auto-dev](./django-auto-dev/SKILL.md)
 - [white-django-engine](./white-django-engine/SKILL.md)
 - [visual-frontend-master](./visual-frontend-master/SKILL.md)
+- [tiktok-trend-hunter](./tiktok-trend-hunter/SKILL.md)
 
 ## Hub Tools
 
@@ -35,3 +36,6 @@ This repository contains a collection of skills to empower AI agents with specia
 
 ### visual_frontend_master
 *High-end UI/UX design and Django frontend generation.*
+
+### tiktok_trend_hunter
+*Scan TikTok Shop trends and generate viral content scripts.*

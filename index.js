@@ -30,6 +30,10 @@ if (fullCommand.startsWith('install_') || fullCommand === 'list_oracle_skills' |
     // Route to visual-frontend-master
     const skillArgs = [join(import.meta.dir, 'visual-frontend-master', 'index.js'), ...args];
     spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
+} else if (fullCommand.startsWith('tiktok_trend_')) {
+    // Route to tiktok-trend-hunter
+    const skillArgs = [join(import.meta.dir, 'tiktok-trend-hunter', 'index.js'), ...args];
+    spawnSync('bun', skillArgs, { stdio: 'inherit', shell: true });
 } else {
-    console.log("Usage: [oracle-tool] | [django_architect-tool] | [trading-tool] | [django_auto_tool] | [white_django_tool] | [visual_frontend_tool]");
+    console.log("Usage: [oracle] | [django_architect] | [trading] | [django_auto] | [white_django] | [visual_frontend] | [tiktok_trend]");
 }
